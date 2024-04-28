@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MyMina Traiteur - Contact</title>
+    <link rel="stylesheet" href="contact.css">
+</head>
+
+<body>
+    <header>
+        <nav>
+            <div class="logo">
+                <h1>MyMina</h1>
+            </div>
+            <ul class="navbar">
+                <li><a href="accueil.html">Accueil</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="menu.html">Menu</a></li>
+                <li><a href="contact.html" class="active">Contact</a></li>
+            </ul>
+        </nav>
+    </header> 
+    <div class="coor">
+        <H2 class="coor">Nos coordonées :</H2>
+    </div>
+    <div>
+        <p class="tel">Télephone : +33 7 68 91 16 60</p>
+    </div>
+    <div>
+        <p class="mail">E-mail : MyMina@outlook.fr</p>
+    </div>
+    <section id="contact">
+        <h2 class="hp">Contactez-Nous</h2>
+        <p class="hp">Pour toute question ou réservation, n'hésitez pas à nous contacter en utilisant le formulaire ci-dessous :</p>
+        <form action="form.php" method="post">
+            <label for="name">Nom :</label>
+            <input id="name" name="name" required>
+
+            <label for="email">Email :</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="message">Message :</label>
+            <textarea id="message" name="message" rows="5" required></textarea>
+
+            <button type="submit">Envoyer</button>
+        </form>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 MyMina. Tous droits réservés.</p>
+    </footer>
+</body>
+
+</html>

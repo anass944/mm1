@@ -1,0 +1,103 @@
+/* styles.css */
+
+/* Styles généraux */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+/* Barre de navigation */
+nav {
+    background-color: #f8f8f8;
+    padding: 5px 10px; /* Ajuster les marges pour réduire la hauteur */
+    position: relative;
+    height: 70px; /* Ajuster la hauteur selon vos préférences */
+    display: flex;
+    align-items: center;
+    justify-content: space-between; /* Assure que le logo est à gauche et les liens à droite */
+}
+
+.logo {
+    display: inline-block;
+}
+
+.navbar {
+    list-style-type: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+    /* Aligner les liens à droite */
+    justify-content: space-between;
+    padding-right: 20px;
+    
+}
+
+.navbar li {
+    display: inline;
+    margin-left: 20px;
+}
+
+.navbar li a {
+    text-decoration: none;
+    color: #333;
+    position: relative;
+    padding-bottom: 4px; /* Assure de l'espace pour la ligne */
+    padding-top: 10px; /* Espacement vertical autour des liens */
+    padding-bottom: 1px;
+    font-size: 20px; /* Taille de police à ajuster selon vos préférences */
+    font-weight: bold;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS',light;
+    
+}
+
+/* Soulignement des éléments */
+.navbar li a:hover::after,
+.navbar li a.active::after {
+    content: "";
+    position: absolute;
+    bottom: -4px;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background-color: #333;
+    transition: width 0.3s; /* Transition de la largeur */
+}
+
+.navbar li a::after {
+    content: "";
+    position: absolute;
+    bottom: -4px;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background-color: black;
+    transition: width 0.2s; /* Transition de la largeur */
+}
+
+/* Sections */
+section {
+    padding: 20px;
+}
+
+h2 {
+    color: #333;
+}
+
+footer {
+    text-align: center;
+    padding: 10px;
+    background-color: #f8f8f8;
+}
+
+h1 {
+    padding-left: 20px;
+    font-size: 36px;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS',light;
+}
+
+.coor {
+    display: flex;
+    justify-content: center;
+}
+
